@@ -1,0 +1,13 @@
+rules:
+  default: false
+  custom:
+  - seriesQuery: 'php_apache_requests_total{namespace="default"}'
+    resources:
+      overrides:
+        namespace: {resource: "namespace"}
+    name:
+      matches: "^(.+)"
+configMaps:
+- name: php-apache-adapter
+  namespace: default
+  key: adapter.rules
