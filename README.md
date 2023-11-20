@@ -1,4 +1,7 @@
 # HPADemo
+A HorizontalPodAutoscaler (HPA for short) automatically updates a workload resource (such as a Deployment or StatefulSet), with the aim of automatically scaling the workload to match demand.
+
+Horizontal scaling means that the response to increased load is to deploy more Pods.
 
 Here we experiment HPA
 
